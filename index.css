@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Lato, Sans-serif'
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  height: 100vh;
+  justify-content: center;
+  text-align:center;
+  box-sizing:border-box;
+  font-family:"Lato",Sans-serif;
+}
+
+.button {     
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;        
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+div.c-wrapper{
+  width: 60%; /* for example */
+  margin: auto;
+}
+
+.box{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform : translate(-50% ,-50%);
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+  text-transform:uppercase;
+  position:relative;
+  top:0;
+  left:0;
+  padding:20px 40px;
+  border-radius:100px;
+  display:inline-block;
+  transition: all .5s;
+}
+
+.btn-white{
+  background: grey; opacity:.8;
+  color:#000;
+}
+
+.btn:hover{
+   box-shadow:0px 10px 10px rgba(0,0,0,0.2);
+   transform : translateY(-3px);
+}
+
+.btn:active{
+  box-shadow:0px 5px 10px black;
+  transform: translateY(-1px);
+}
+
+.btn-bottom-animation-1{
+  animation:comeFromBottom 1s ease-out .8s;
+}
+
+.btn::after{
+  content:"";
+  text-decoration: none;
+  text-transform:uppercase;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:100px;
+  display:inline-block;
+  z-index:-1;
+  transition: all .5s;
+}
+
+.btn-white::after {
+    background: #fff;
+}
+
+.btn-animation-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: .6;
+}
+
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+a.bold {
+  font-weight: bold;
+}
+
+
+.centered {
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.clear {
+  opacity: 0;
+}
+
+  .searchbar{
+  height: 60px;
+  background-color: #353b48;
+  border-radius: 30px;
+  padding: 10px;
+  }
+
+  .search_input{
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color:transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+  }
+
+  .searchbar:hover > .search_input{
+  padding: 0 10px;
+  width: 450px;
+  caret-color:red;
+  transition: width 0.4s linear;
+  }
+
+  .searchbar:hover > .search_icon{
+  background: white;
+  color: #e74c3c;
+  }
+
+  .search_icon{
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color:white;
+  text-decoration:none;
+  }
+
+  /*New css content */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+.CursiveFont{
+  font-family: 'Lobster', cursive;
+  color: lightgrey;
+  font-size: 25px;
+}
+
+.oval {
+  height: 50px;
+  width: 150px;
+  background-color: rgb(78, 80, 93);
+  border-color: rgb(78, 80, 93);
+  border-radius: (25/17)px;
+  font-family: 'PT Serif', serif;
+  font-weight: medium;
+  color: white;
+}
+
+
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-gap: 50px 100px;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 20px;
+  left: 50%;
+  margin-left: 70px;
+  margin-right: auto;
+}
+.spaces{
+  margin-right: 250px;
+}
